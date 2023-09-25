@@ -81,7 +81,24 @@
   background: #000000;
   border-radius: 5px;
   height: 5px;
-  width: 50%;
+}
+
+.current {
+  position: absolute;
+  color: white;
+  width: 40px;
+  height: 20px;
+  top: 27%;
+  left: 13%;
+}
+
+.duration {
+  position: absolute;
+  color: white;
+  width: 40px;
+  height: 20px;
+  top: 27%;
+  left: 77%;
 }
 
 .play-list {
