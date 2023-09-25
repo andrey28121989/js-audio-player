@@ -1,4 +1,5 @@
 .wrapper {
+  position: absolute;
   height: 100%;
   width: 100%;
 }
@@ -16,34 +17,14 @@
   z-index: -1;
 }
 
-.header {
-  position: absolute;
-  top: 0;
-  margin: 0 auto;
-  background-image: url(assets/img/background.jpg);
-  width: 100%; 
-}
-
-.header__mem {
-  margin: 0 auto;
-  max-width: 63.5rem;
-  font-size: 2.6rem;
-  padding: 1rem 0 0 0;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .container__player {
   display: flex;
   align-items: center;
   flex-direction: column;
   position: absolute;
-  top: 100px;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
   height: 400px;
   width: 330px;
   max-height: 100%;
@@ -51,6 +32,7 @@
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px #000000;
+  z-index: 3
 }
 
 .controls {
@@ -83,12 +65,32 @@
   z-index: 3;
 }
 
+.progress__container {
+  position: absolute;
+  top:30%;
+  background: white;
+  border-radius: 5px;
+  width: 50%;
+  height: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.progress__bar {
+  background: #000000;
+  border-radius: 5px;
+  height: 5px;
+  width: 50%;
+}
+
 .play-list {
   display: flex;
   flex-direction: column;
   position: absolute;
   text-align: left;
   bottom: 22%;
+  color: white;
 }
 
 .play-item {
